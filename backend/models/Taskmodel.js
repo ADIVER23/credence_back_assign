@@ -7,12 +7,12 @@ const TaskSchema = new mongoose.Schema(
   },
   img:{
     type:String,
-    required:true,
+    required:false,
   },
   summary:{
     type:String,
-    required:true,
+    required:false,
   },
 }
 );
-module.exports = mongoose.model.apply("Task",TaskSchema)
+module.exports = mongoose.model("Task",TaskSchema)
